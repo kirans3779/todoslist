@@ -21,7 +21,7 @@
   
     <!-- Completed Column -->
     <ng-container matColumnDef="completed">
-      <mat-header-cell *matHeaderCellDef data-column="completed" mat-sort-header="completed">Completed</mat-header-cell>
+      <mat-header-cell *matHeaderCellDef data-column="completed" mat-sort-header="completed">Complete</mat-header-cell>
       <mat-cell *matCellDef="let task">
         <mat-checkbox (change)="onTaskCompleted(task)" [(ngModel)]="task.completed" ></mat-checkbox>
       </mat-cell>
